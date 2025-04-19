@@ -9,9 +9,12 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+#gh repo clone FSD-JatinderKumar/Next-Journal-App
+# git remote add origin https://github.com/FSD-JatinderKumar/Next-Journal-App
 # testing
 /coverage
+.env
+.7z
 
 # next.js
 /.next/
@@ -39,3 +42,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+*.7z

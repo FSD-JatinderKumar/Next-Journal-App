@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "dev": "next dev",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,14 +10,35 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.67.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/jquery": "^3.5.32",
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.5",
+    "crypto-js": "^4.2.0",
+    "datatables.net": "^2.2.2",
+    "datatables.net-dt": "^2.2.2",
+    "datatables.net-react": "^1.0.0",
+    "datatables.net-responsive-dt": "^3.0.4",
+    "datatables.net-select-dt": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "font-awesome": "^4.7.0",
+    "formik": "^2.4.6",
+    "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5",
+    "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-toastify": "^11.0.5",
+    "sweetalert2": "^11.6.13",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/bootstrap": "^5.2.10",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }
