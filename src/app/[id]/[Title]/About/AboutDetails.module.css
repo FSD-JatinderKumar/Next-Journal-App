@@ -1,0 +1,122 @@
+.imgShadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .journalTitle {
+    color: #292929;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .listItem {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .subText {
+    color: #292929;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .journalDetails {
+    border: 1.5px solid #909090;
+    padding: 20px;
+  }
+  
+  .journalDetailsListItem {
+    margin-bottom: 17px;
+    text-align: justify;
+  }
+  
+  .sectionTitle {
+    color: #e77000;
+    font-family: Montserrat, sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .uploadButton {
+    background-color: #e77000;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  
+
+  .journalImage {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 22rem;
+    margin: 0 auto;
+    display: block;
+    height: 30rem;
+  }
+  
+  .title {
+    color: #292929;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .list li {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .subTitle {
+    color: #292929;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .journalDetails {
+    border: 1.5px solid #909090;
+    padding: 1rem;
+    height: 30rem;
+  }
+  
+  .journalDetails ul {
+    padding-left: 0rem !important;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .journalDetails ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .ctaHeading {
+    color: #e77000;
+    font-size: 38px;
+    font-weight: 600;
+  }
+  

@@ -1,0 +1,120 @@
+/* Section */
+.section {
+    padding: 60px 0;
+  }
+  
+  /* Popular genre section */
+  .popularGenreSection {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  /* Popular genre navigation styles */
+  .popularGenre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
+  }
+  
+  .popularGenre h3 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  /* Tab styles */
+  .nav-tabs li a {
+    color: #cacaca;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 10px 0 10px;
+    display: block;
+    margin-bottom: -3px;
+  }
+  
+  .nav-tabs li a span {
+    border-bottom: 4px solid transparent;
+  }
+  
+  .nav-tabs li a.active span {
+    border-bottom: 4px solid #e77000;
+    display: block;
+    width: 40px;
+    margin: 10px auto 0;
+  }
+  
+  .nav-tabs li a.active {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  /* Tab content */
+  .tabContent {
+    padding: 30px 0;
+  }
+  
+  .popularGenreContent {
+    color: #000;
+    background-color: #f1f2f4;
+    margin-top: 65px;
+  }
+  
+  .popularGenreImg {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image */
+    padding: 20px;
+    background-color: #f1f1f1; /* Apply background to the image container */
+    border-radius: 10px; /* Optional: add rounded corners to the image container */
+  }
+  
+  .popularGenreDesc {
+    /* padding: 0 20px 20px 20px; */
+    padding: 12px;
+    margin: 0;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .popularGenreAuthor {
+    padding: 15px 0;
+    margin: 0;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 700;
+    border-top: 1px solid #cacaca;
+    text-align: center;
+  }
+  
+  /* Image styles */
+  .popularGenreImg img {
+    margin-top: -65px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .textStyle {
+  color: #606060;
+  margin-top:0.1rem;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 15px;
+}
+  /* Pagination button styles */
+  .popularGenreBtn {
+    border-radius: 22px;
+    background: #7c7a77;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 40px;
+  }
+  
