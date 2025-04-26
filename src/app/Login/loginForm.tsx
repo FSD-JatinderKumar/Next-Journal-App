@@ -91,6 +91,7 @@ export default function LoginForm() {
             type="text"
             name="userName"
             className="form-control"
+            placeholder='User Id '
             value={form.userName}
             onChange={(e) => setForm({ ...form, userName: e.target.value })}
           />
@@ -104,6 +105,7 @@ export default function LoginForm() {
           <input
             type="password"
             name="password"
+            placeholder='password key'
             className="form-control"
             value={form.password}
             onChange={(e) => setForm({ ...form, password: e.target.value })}

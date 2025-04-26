@@ -1,0 +1,149 @@
+.customNav {
+  /* background: #fff; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+}
+
+.nav {
+  position: relative;
+}
+
+.navToggle {
+  display: none;
+  cursor: pointer;
+}
+
+.mobileIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobileIcon div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  justify-content: end;
+  /* padding: 10px 20px; */
+  background: transparent;
+  /* border-top: 1px solid #ddd; */
+}
+
+.navMenu li {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* .navMenu li a:hover {
+  color: #0070f3;
+} */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > input[type="checkbox"] {
+  display: none !important;
+}
+
+.dropdown ul {  
+  top: 100%;
+  left: 0;  
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+  
+  /* min-width: 100px; */
+
+  display: none;
+  position: absolute;
+  /* z-index: 9; */
+  width: max-content;
+  background-color: #E47200;
+}
+
+.dropdown ul li {
+  width: 100%;
+}
+
+.dropdown ul li a {
+  /* padding: 10px 15px; */
+  display: block;
+  font-size: 14px;
+  color: #fff !important;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+}
+
+/* .navLink:hover {
+  color: #0070f3;
+} */
+
+.navMenu li .navLink {
+  display: flex;
+  align-items: center;
+}
+
+/* For Mobile */
+.mobileCheckbox {
+  display: none;
+}
+
+.showMenu {
+  display: flex !important;
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navToggle {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+  }
+
+  #drop:checked + .navMenu {
+    display: flex;
+  }
+
+  .mobileIcon {
+    display: flex;
+  }
+
+  .navMenu li {
+    width: 100%;
+  }
+
+  .dropdown:hover ul {
+    position: relative;
+  }
+}

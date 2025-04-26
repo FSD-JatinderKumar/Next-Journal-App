@@ -10,7 +10,9 @@ export default function LoginPage() {
               <div className="auth-side-wrapper" style={{
                 height: '40rem',
                 backgroundImage: 'url(https://www.lpu.in/lpu-assets/images/cif/login-left.png)',
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center'
               }} />
             </div>
             <div className="col-md-6 p-md-5">

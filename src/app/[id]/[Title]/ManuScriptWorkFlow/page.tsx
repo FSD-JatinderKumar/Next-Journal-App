@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutData from './AboutDetails';
+import AboutData from './ManuScriptWorkFlow';
 import Header from '@/app/components/Header/Header';
 import TopSlider from '@/app/components/TopSlider/TopSlider';
 import JournalNav from '@/app/components/InnerMenu/JournalNav';
 
-const AboutPage = () => {
+const ManuScriptWorkFlow = () => {
   return (
     <main className="p-6">
       <TopSlider/>
@@ -15,4 +15,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ManuScriptWorkFlow;
