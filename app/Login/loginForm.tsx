@@ -35,7 +35,6 @@ export default function LoginForm() {
     setSubmitted(true);
     if (!validate()) return;
 
-    console.log('🚀 Submitting login with data:', form);
 
     const result = await adminLogin({
       userName: form.userName,
@@ -45,20 +44,21 @@ export default function LoginForm() {
     if (result.success) {
       setAuthToken(result.token);
       saveUser(result.token);
-   
+      localStorage.setItem('userRole', form.UserRoles); // ✅ Save role in localStorage
+
       switch (form.UserRoles) {
         case '0':
           redirect('/EditorDashboard');
           break;
         case '1':
-          Swal.fire('Author Access', 'Author dashboard is under construction.', 'info');
+          redirect('/AuthorDashboard');
+          //Swal.fire('Author Access', 'Author dashboard is under construction.', 'info');
           break;
         case '2':
-          Swal.fire('Reviewer Access', 'Reviewers dashboard is under construction.', 'info');
+          redirect('/ReviewersDashboard');
           break;
         case '3':
-          Swal.fire('Publisher Access', 'Publisher dashboard is under construction.', 'info');
-          break;
+          redirect('/PublisherDashboard');
         default:
           Swal.fire('Unknown Role', 'Unable to determine role.', 'error');
       }
@@ -75,7 +75,6 @@ export default function LoginForm() {
 
   return (
     <form onSubmit={onSubmit} className="p-4">
-      {/* User ID */}
       <div className="row mt-3">
         <label className="col-md-3">User Id</label>
         <div className="col-md-6">
@@ -90,7 +89,6 @@ export default function LoginForm() {
         </div>
       </div>
 
-      {/* Password */}
       <div className="row mt-2">
         <label className="col-md-3">Password</label>
         <div className="col-md-6">
@@ -105,7 +103,6 @@ export default function LoginForm() {
         </div>
       </div>
 
-      {/* Role */}
       <div className="row mt-2">
         <label className="col-md-3">Login Role</label>
         <div className="col-md-6">
@@ -126,7 +123,6 @@ export default function LoginForm() {
         </div>
       </div>
 
-      {/* Submit */}
       <div className="row mt-2">
         <div className="col-md-3">
           <button type="submit" className="btn btn-danger">Login</button>

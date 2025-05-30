@@ -11,7 +11,7 @@ import { cookies } from 'next/headers';
 
 
 export const adminLogin = async (formData: { userName: string; password: string }) => {
-  console.log('📤 Sending login request with:', formData);
+  // console.log('📤 Sending login request with:', formData);
 
   try {
     const response = await axios.post(
@@ -19,8 +19,8 @@ export const adminLogin = async (formData: { userName: string; password: string 
       formData
     );
 
-    console.log('✅ API response received:', response);
-    console.log('📦 Response data:', response.data);
+    // console.log('✅ API response received:', response);
+    // console.log('📦 Response data:', response.data);
 
     if (response.data && response.data.token) {
       return {
@@ -29,10 +29,10 @@ export const adminLogin = async (formData: { userName: string; password: string 
         data: response.data,
       };
     } else {
-      console.warn('⚠️ No token received in response:', response.data);
+      // console.warn('⚠️ No token received in response:', response.data);
       return {
         success: false,
-        message: 'Invalid response from server',
+        message: 'Invalid Login Details',
       };
     }
   } catch (err: any) {

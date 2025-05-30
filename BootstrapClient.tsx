@@ -1,15 +1,18 @@
 'use client';
 
 import { useEffect } from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // No more warning
 
 export default function BootstrapClient() {
   useEffect(() => {
-    console.log('Bootstrap bundle loaded');
+    // @ts-ignore - no types for bootstrap.bundle.min.js
+    import('bootstrap/dist/js/bootstrap.bundle.min.js')
+      .then(() => {
+        console.log('✅ Bootstrap JS loaded on client');
+      })
+      .catch((err) => {
+        console.error('❌ Failed to load Bootstrap JS:', err);
+      });
   }, []);
 
   return null;
 }
-
-
-
